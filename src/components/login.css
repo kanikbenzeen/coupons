@@ -1,18 +1,19 @@
 body {
     align-items: center;
-    background-color: #000;
+    background-color: rgb(255, 255, 255);
     display: flex;
     justify-content: center;
-    height: 100vh;
   }
   
   .form {
-    background-color: #15172b;
+    background-color: #000000;
     border-radius: 20px;
     box-sizing: border-box;
     height: 500px;
     padding: 20px;
     width: 400px;
+    margin-top: 50%;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
   }
   
   .title {
@@ -58,7 +59,7 @@ body {
     width: 100%;
   }
   
-  .cut {
+  /* .cut {
     background-color: #15172b;
     border-radius: 10px;
     height: 20px;
@@ -69,7 +70,7 @@ body {
     transition: transform 200ms;
     width: 76px;
   }
-  
+   */
   .cut-short {
     width: 50px;
   }
@@ -93,7 +94,7 @@ body {
   
   .input:focus ~ .placeholder,
   .input:not(:placeholder-shown) ~ .placeholder {
-    transform: translateY(-30px) translateX(10px) scale(0.75);
+    transform: translateY(-38px) translateX(0px) scale(0.75);
   }
   
   .input:not(:placeholder-shown) ~ .placeholder {
@@ -101,15 +102,15 @@ body {
   }
   
   .input:focus ~ .placeholder {
-    color: #dc2f55;
+    color: #ffffff;
   }
   
   .submit {
-    background-color: #08d;
+    background-color: #03DAC6;
     border-radius: 12px;
     border: 0;
     box-sizing: border-box;
-    color: #eee;
+    color: rgb(0, 0, 0);
     cursor: pointer;
     font-size: 18px;
     height: 50px;
@@ -120,6 +121,6 @@ body {
   }
   
   .submit:active {
-    background-color: #06b;
+    background-color: #018786;
   }
   
