@@ -35,7 +35,7 @@ const verify = useNavigate()
       // collectLength=rese
      
       console.log(rese)
-      storeLength=await rese.length
+      storeLength=  rese.length
       if (res.status === 200) {
         console.log("User created successfully");
       } else {
