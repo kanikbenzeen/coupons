@@ -1,8 +1,14 @@
 import React from 'react'
 import './congrats.css'
 import img from '../images/images.gif'
+import { useParams } from 'react-router-dom';
 
-const Congrats = () => {
+const Congrats = (props) => {
+    const params= useParams()
+    let name = params.id
+    let mobile = params.id2
+    let createdAt = params.id2
+console.log(props)
     return (
         <div>
 
@@ -14,11 +20,11 @@ const Congrats = () => {
                     </div>
                     <div className="text">
                         <p>You have successfully redeemed your coupon<br/><br />You have won<br /><br /></p>
-                        <p className="discount">100 Rs</p><br/>
+                        <p className="discount">{mobile}</p><br/>
                         <p>Share the screenshot with the dealer to receive your price
                         </p>
                     </div>
-                    <p className="regards">Regards, VDROP RO SYSTEM</p>
+                    <p className="regards">Regards, {name}</p>
                 </div>
             </div>
 

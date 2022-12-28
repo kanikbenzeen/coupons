@@ -12,7 +12,7 @@ const verify = useNavigate()
   const [name, setName] = useState('')
   const [coupon, setCoupon] = useState('')
   const [mobile, setMobile] = useState('')
-  const [store, setStore] = useState(0)
+
  
   const allFields = async (e) =>{
     e.preventDefault()
