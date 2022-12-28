@@ -5,7 +5,7 @@ body {
     justify-content: center;
   }
   
-  .form {
+  .form1 {
     background-color: #000000;
     border-radius: 20px;
     box-sizing: border-box;
@@ -16,7 +16,7 @@ body {
     box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
   }
   
-  .title {
+  .title1 {
     color: #eee;
     font-family: sans-serif;
     font-size: 36px;
@@ -24,7 +24,7 @@ body {
     margin-top: 30px;
   }
   
-  .subtitle {
+  .subtitle1 {
     color: #eee;
     font-family: sans-serif;
     font-size: 16px;
@@ -32,21 +32,21 @@ body {
     margin-top: 10px;
   }
   
-  .input-container {
+  .input-container1 {
     height: 50px;
     position: relative;
     width: 100%;
   }
   
-  .ic1 {
+  .ic11 {
     margin-top: 40px;
   }
   
-  .ic2 {
+  .ic21 {
     margin-top: 30px;
   }
   
-  .input {
+  .input1 {
     background-color: #303245;
     border-radius: 12px;
     border: 0;
@@ -71,7 +71,7 @@ body {
     width: 76px;
   }
    */
-  .cut-short {
+  .cut-short1 {
     width: 50px;
   }
   
@@ -80,7 +80,7 @@ body {
     transform: translateY(8px);
   }
   
-  .placeholder {
+  .placeholder1 {
     color: #65657b;
     font-family: sans-serif;
     left: 20px;
@@ -92,20 +92,20 @@ body {
     top: 20px;
   }
   
-  .input:focus ~ .placeholder,
-  .input:not(:placeholder-shown) ~ .placeholder {
+  .input1:focus ~ .placeholder1,
+  .input1:not(:placeholder-shown) ~ .placeholder1 {
     transform: translateY(-38px) translateX(0px) scale(0.75);
   }
   
-  .input:not(:placeholder-shown) ~ .placeholder {
+  .input1:not(:placeholder-shown) ~ .placeholder1 {
     color: #808097;
   }
   
-  .input:focus ~ .placeholder {
+  .input1:focus ~ .placeholder1 {
     color: #ffffff;
   }
   
-  .submit {
+  .submit1 {
     background-color: #03DAC6;
     border-radius: 12px;
     border: 0;
@@ -120,7 +120,7 @@ body {
     width: 100%;
   }
   
-  .submit:active {
+  .submit1:active {
     background-color: #018786;
   }
   

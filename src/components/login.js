@@ -60,23 +60,23 @@ const verify = useNavigate()
   console.log(storeLength)
   return (
     <div>
-      <form className="form" method='POST'>
-      <div className="title">Redeem</div>
-      <div className="subtitle">Your Coupon Code Here</div>
-      <div className="input-container ic1">
-        <input id="firstname" className="input" type="text" placeholder=" " value ={name} onChange={(e)=>setName(e.target.value)} />
-        <div className="cut"></div>
-        <label htmlFor="firstname" className="placeholder">Name</label>
+      <form className="form1" method='POST'>
+      <div className="title1">Redeem</div>
+      <div className="subtitle1">Your Coupon Code Here</div>
+      <div className="input-container1 ic11">
+        <input id="firstname" className="input1" type="text" placeholder=" " value ={name} onChange={(e)=>setName(e.target.value)} />
+        <div className="cut1"></div>
+        <label htmlFor="firstname" className="placeholder1">Name</label>
       </div>
-      <div className="input-container ic2">
-        <input id="lastname" className="input"  type="text" placeholder=" " value ={mobile}  onChange={(e)=>setMobile(e.target.value)} />
+      <div className="input-container1 ic21">
+        <input id="lastname" className="input1"  type="text" placeholder=" " value ={mobile}  onChange={(e)=>setMobile(e.target.value)} />
         <div className="cut"></div>
-        <label htmlFor="lastname" className="placeholder">Contact Number</label>
+        <label htmlFor="lastname" className="placeholder1">Contact Number</label>
       </div>
-      <div className="input-container ic2">
-        <input id="email" className="input" type="text" placeholder=" " value ={coupon}  onChange={(e)=>setCoupon(e.target.value)}/>
-        <div className="cut cut-short"></div>
-        <label  className="placeholder">Coupon Code</label>
+      <div className="input-container1 ic21">
+        <input id="email" className="input1" type="text" placeholder=" " value ={coupon}  onChange={(e)=>setCoupon(e.target.value)}/>
+        <div className="cut1 cut-short1"></div>
+        <label  className="placeholder1">Coupon Code</label>
         {
         storeLength ? ( <p style={{
           color:'red',
@@ -87,7 +87,7 @@ const verify = useNavigate()
         }
         
       </div>
-      <button type="text" className="submit" onClick={allFields}>Generate OTP</button>
+      <button type="text" className="submit1" onClick={allFields}>Generate OTP</button>
     </form>
  
     
