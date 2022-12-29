@@ -8,6 +8,13 @@ const Congrats = (props) => {
     let name = params.id
     let mobile = params.id2
     let createdAt = params.id2
+    const date = new Date();
+    let day = date.getDate();
+    let month = date.getMonth() + 1;
+    let year = date.getFullYear();
+    let currentDate = `${day}-${month}-${year}`;
+    var today = new Date();
+    var time = today.getHours() + ":" + today.getMinutes();
 console.log(props)
     return (
         <div>
@@ -20,11 +27,41 @@ console.log(props)
                     </div>
                     <div className="text">
                         <p>You have successfully redeemed your coupon<br/><br />You have won<br /><br /></p>
-                        <p className="discount">{mobile}</p><br/>
-                        <p>Share the screenshot with the dealer to receive your price
+                        <p className="discount">discount</p><br/>
+                        <p className="share">Share the screenshot with the dealer to receive your price
                         </p>
                     </div>
-                    <p className="regards">Regards, {name}</p>
+                    <div>
+                    <table>
+  <tbody>
+  <tr>
+      <th scope="row">Name :</th>
+      <td>{name}</td>
+    </tr>
+    <tr>
+      <th scope="row">Mobile Number :</th>
+      <td>{mobile}</td>
+    </tr>
+    <tr>
+      <th scope="row">Coupon Code :</th>
+      <td>code</td>
+    </tr>
+    <tr>
+      <th scope="row">Dealer Name :</th>
+      <td>dealer</td>
+    </tr>
+    <tr>
+      <th scope="row">Date :</th>
+      <td>{currentDate}</td>
+    </tr>
+    <tr>
+      <th scope="row">Time :</th>
+      <td>{time}</td>
+    </tr>
+  </tbody>
+</table>
+                    </div>
+                    <p className="regards">Regards, V-DROP</p>
                 </div>
             </div>
 
