@@ -13,11 +13,20 @@ const verify = useNavigate()
   const [coupon, setCoupon] = useState('')
   const [mobile, setMobile] = useState('')
 
- 
   const allFields = async (e) =>{
     e.preventDefault()
-// let collectLength ;
-
+    if(name.length===0){
+      return alert('Please Enter Your Name')
+   }
+    if(mobile.length===0){
+       return alert('Please Enter Your Contact Number')
+    }
+    if(mobile.length < 10){
+     return alert('Contact Number must be 10 digit')
+    }
+    if(coupon.length===0){
+      return alert('Please Enter Coupon code')
+    }
     try {
       let res = await fetch("login", {
         method: "POST",
@@ -69,7 +78,12 @@ const verify = useNavigate()
         <label htmlFor="firstname" className="placeholder1">Name</label>
       </div>
       <div className="input-container1 ic21">
-        <input id="lastname" className="input1"  type="text" placeholder=" " value ={mobile}  onChange={(e)=>setMobile(e.target.value)} />
+        <input id="lastname" className="input1" maxLength={10} pattern="^[0-9]*[.,]?[0-9]*$"
+        type="text" placeholder=" " value ={mobile}  onChange={(e)=>setMobile(e.target.value)}  onKeyPress={(event) => {
+          if (!/[0-9]/.test(event.key)) {
+            event.preventDefault();
+          }
+        }}/>
         <div className="cut"></div>
         <label htmlFor="lastname" className="placeholder1">Contact Number</label>
       </div>

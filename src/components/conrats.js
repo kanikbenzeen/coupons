@@ -7,7 +7,9 @@ const Congrats = (props) => {
     const params= useParams()
     let name = params.id
     let mobile = params.id2
-    let createdAt = params.id2
+    let code = params.id4
+    let discount = params.id5
+    // let createdAt = params.id2
     const date = new Date();
     let day = date.getDate();
     let month = date.getMonth() + 1;
@@ -27,7 +29,7 @@ console.log(props)
                     </div>
                     <div className="text">
                         <p>You have successfully redeemed your coupon<br/><br />You have won<br /><br /></p>
-                        <p className="discount">discount</p><br/>
+                        <p className="discount">₹ {discount}</p><br/>
                         <p className="share">Share the screenshot with the dealer to receive your price
                         </p>
                     </div>
@@ -36,7 +38,7 @@ console.log(props)
   <tbody>
   <tr>
       <th scope="row">Name :</th>
-      <td>{name}</td>
+      <td>{name.toUpperCase()}</td>
     </tr>
     <tr>
       <th scope="row">Mobile Number :</th>
@@ -44,7 +46,7 @@ console.log(props)
     </tr>
     <tr>
       <th scope="row">Coupon Code :</th>
-      <td>code</td>
+      <td>{code}</td>
     </tr>
     <tr>
       <th scope="row">Dealer Name :</th>

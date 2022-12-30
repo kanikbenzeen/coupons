@@ -32,7 +32,7 @@ const otpVerify = async(e)=>{
    
 if(rese.verify==='approved'){
   console.log('Your data is safe ')
-  navCongrats(`/congrats/${rese.alldata.name}/${rese.alldata.mobile}/${rese.alldata.createdAt}/${rese.alldata.coupon}`)
+  navCongrats(`/congrats/${rese.alldata.name}/${rese.alldata.mobile}/${rese.alldata.createdAt}/${rese.alldata.coupon}/${rese.alldata.discount}`)
 }else{
   alert('You Entered Wrong Otp')
 }
@@ -48,7 +48,11 @@ if(rese.verify==='approved'){
       <div className="subtitle">Verify Your OTP</div>
 
       <div className="input-container ic2">
-        <input id="lastname" className="input" type="text" placeholder=" "onChange={(e)=>setOtp(e.target.value)} />
+        <input id="lastname" className="input" type="text" placeholder=" "onChange={(e)=>setOtp(e.target.value)} maxLength={6} onKeyPress={(event) => {
+          if (!/[0-9]/.test(event.key)) {
+            event.preventDefault();
+          }
+        }} />
         <div className="cut"></div>
         <label htmlFor="lastname" className="placeholder">Enter Your OTP</label>
       </div>
